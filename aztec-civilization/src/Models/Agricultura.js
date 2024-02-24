@@ -5,7 +5,7 @@ import {
   PointerLockControls,
   useEnvironment,
 } from "@react-three/drei";
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import { angleToRadians } from "../utils/angle";
 import Fence from "./Fence";
 import { Physics, RigidBody } from "@react-three/rapier";
@@ -16,7 +16,6 @@ import Corn from "./Corn";
 import Pumpkin from "./Pumpkin";
 import Pepper from "./Pepper";
 import Cotton from "./Cottonplant";
-import { useFrame } from "react-three-fiber";
 
 const Agricultura = () => {
   const envMap = useEnvironment({
